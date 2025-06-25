@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   dipoll:
-    image: dipoll:1.0.0
+    image: dipoll:latest
     container_name: default-scheduler
     restart: unless-stopped
     environment:
@@ -12,3 +12,30 @@ services:
       BOT_OWNER_ID: ${BOT_OWNER_ID}
       TOKEN: ${TOKEN}
       NOTIFY: ${NOTIFY}
+      # Commands customization
+      PREFIX_CMD: "_es"
+      FORCE_SCHEDULE_CMD: "_force"
+      ENABLE_SCHEDULER_CMD: "_enable"
+      DISABLE_SCHEDULER_CMD: "_disable"
+      # Emote declaration
+      YES_EMOTE: "\U00002705"
+      NO_EMOTE: "\U0000274C"
+      WARN_EMOTE: "\U000026A0"
+      # Schedule, answers and duration for the poll
+      SCHEDULES: "0-1200"
+      POLL_DURATION_HOURS: 24
+      POLL_ANSWERS: "01-15h00_15h30,03-18h00"
+      # Localization
+      ACTIVITY_TEXT: "Event Scheduler"
+      POLL_TITLE_TEXT: "Next Game Session"
+      POLL_AWAY_TEXT: "Away"
+      POLL_BETWEEN_TEXT: "between"
+      POLL_AND_TEXT: "and"
+      POLL_AT_TEXT: "at"
+      MONDAY_TEXT: "Monday"
+      TUESDAY_TEXT: "Tuesday"
+      WEDNESDAY_TEXT: "Wednesday"
+      THURSDAY_TEXT: "Thursday"
+      FRIDAY_TEXT: "Friday"
+      SATURDAY_TEXT: "Saturday"
+      SUNDAY_TEXT: "Sunday"

@@ -3,4 +3,5 @@ WORKDIR /app
 COPY src/* .
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+ENV TZ=Europe/Paris
 CMD ["python", "-m", "main"]

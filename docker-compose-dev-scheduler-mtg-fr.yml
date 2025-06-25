@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   dipoll:
-    image: dipoll:1.0.0
+    image: dipoll:latest
     container_name: dev-scheduler-mtg-fr
     restart: unless-stopped
     environment:

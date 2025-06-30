@@ -6,7 +6,7 @@ Below you'll find everything you need to use the bot.
 # Results
 ### <p align="center">Poll rendered in Discord</p>
 ![Rendered](_samples/ui_rendered.png)<br>
-### <p align="center">Logs rendered in Dokémon</p>
+### <p align="center">Logs rendered in [Dokémon](https://github.com/productiveops/dokemon)</p>
 ![Rendered](_samples/logs_rendered.png)<br>
 
 # Requirements
@@ -24,34 +24,4 @@ Below you'll find everything you need to use the bot.
 # Environment variables
 
 # Known bugs
-* /
-
-# Credits
-### <p align="center">*I do not own any logos and/or backgrounds shown here. I will remove them if I violate any laws and/or intellectual property. Ask me in the [Issues](https://github.com/Doluprane/foundryvtt-login-pages/issues) tab of the project.<br>I am not affiliated with any brands shown in this GitHub repository.*</p>
-<br><p align="center">This is more or less a fork from [dandln](https://github.com/dandln/Foundry-VTT-Prettier-Login-Screen) based on a code of [u/bass-blowfish](https://www.reddit.com/user/bass-blowfish/).<br>If you read this, thank you guys, this is great job and I was greatly inspired by what you achieved !</p><br>
-
-* Vaesen
-    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/vaesen/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/vaesen-2/vaesen-nordic-horror-roleplaying/)).
-
-* Tales From The Loop 
-    * Background is taken from [Swedish Machines](https://www.simonstalenhag.se/svema.html) book from [Simon Stålenhag](https://www.salomonssonagency.se/simon-stalenhag).
-    * Logo is taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/tales-from-the-loop-rpg/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/tales-from-the-loop/core-rulebook/)).
-
-* Dungeons & Dragons
-    * Background and logo are taken from [Wizards of the Coast](https://company.wizards.com/) ([Website](https://dnd.wizards.com/) and/or [Rulebooks](https://marketplace.dndbeyond.com/category/dungeon-masters-guide/)).
-
-* The Witcher
-    * Background is taken from [Wallhere](https://wallhere.com/en/wallpaper/1931009/) from artist [CelenaHehr](https://wallhere.com/en/user/3600649/).
-    * Logo is taken from [CD Projekt RED](https://www.cdprojektred.com/) ([Website](https://www.thewitcher.com/)).
-
-* Alien
-    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/alien/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/alien-rpg-2/)).
-
-* Twilight:2000
-    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/twilight-2000/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/twilight-2000/)).
-
-* Mutant:Year Zero
-    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/mutant-year-zero/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/mutant-year-zero/)).
-
-* Coriolis
-    * Background and logo are taken from [Free League Publishing](https://freeleaguepublishing.com/) ([Website](https://freeleaguepublishing.com/games/coriolis/) and/or [Rulebooks](https://freeleaguepublishing.com/shop/coriolis/)).
+/

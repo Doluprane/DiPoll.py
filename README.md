@@ -5,7 +5,9 @@ Below you'll find everything you need to use the bot.
 
 # Results
 ### <p align="center">Poll rendered in Discord</p>
-![Rendered](_samples/rendered.png)<br>
+![Rendered](_samples/ui_rendered.png)<br>
+### <p align="center">Logs rendered in Dokémon</p>
+![Rendered](_samples/logs_rendered.png)<br>
 
 # Requirements
 * [Discord.py (2.5.2)](https://pypi.org/project/discord.py/)
@@ -14,19 +16,15 @@ Below you'll find everything you need to use the bot.
 * Knowledge about Docker, environment variables and deployments.
 * OPTIONAL: A GUI tool like Dokémon, Rancher, etc...
 
-# WIP
-
 # Deployment
-* OPTIONAL: Update your world's background using the *Administrator Setup*.
-* Set the ```Join Page Theme``` to ```Minimal``` using the *World Setup*.
-* Upload your world logo in your FoundryVTT instance.
-    * I advise you to use the *Administrator Setup* in the same way as if you were updating the world's background WITHOUT clicking on *Update World*. This will upload the file in the root directory of your FoundryVTT instance.
-* Overwrite your ```$foundry_path/resources/app/templates/setup/parts/join-form.hbs``` with [the one in the repo](join-form.hbs).
-* Concatenate your ```$foundry_path/resources/app/public/css/foundry2.css``` with (for example) [The Witcher style](the-witcher/foundry2.css).
-* Don't forget to configure your updated CSS in the [*Configuration Area*](the-witcher/foundry2.css#L10).
+* Update variables in the ```docker-compose-default-scheduler.yml```
+* Build & run the image ```docker compose -f docker-compose-default-scheduler.yml up```
+* Check the logs
+
+# Environment variables
 
 # Known bugs
-* If you upgrade your instance of FoundryVTT, you'll loose everything related to this package (backups are your friends).
+* /
 
 # Credits
 ### <p align="center">*I do not own any logos and/or backgrounds shown here. I will remove them if I violate any laws and/or intellectual property. Ask me in the [Issues](https://github.com/Doluprane/foundryvtt-login-pages/issues) tab of the project.<br>I am not affiliated with any brands shown in this GitHub repository.*</p>

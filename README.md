@@ -41,9 +41,9 @@ Below you'll find everything you need to use the bot.
 ## Commands
 * PREFIX_CMD
     - Defines the prefix to add for all commands
-    - Format: basic string: '_es'
+    - Format: basic string: ```'_es'```
 * FORCE_SCHEDULE_CMD
-    - Defines comand to force the poll, it will be <PREFIX_CMD><FORCE_SCHEDULE_CMD>
+    - Defines comand to force the poll, it will be ```<PREFIX_CMD><FORCE_SCHEDULE_CMD>```
     - Format: basic string: '_force'
 * ENABLE_SCHEDULER_CMD
     - Defines the command to enable notifications, it will be <PREFIX_CMD><ENABLE_SCHEDULER_CMD>

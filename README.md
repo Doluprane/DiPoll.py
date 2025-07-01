@@ -22,6 +22,17 @@ Below you'll find everything you need to use the bot.
 * Check the logs
 
 # Environment variables
+## Basics
+* ROLE_ID: Role ID to mention in the poll
+* CHANNEL_ID: Channel ID to send the poll in
+* BOT_OWNER_ID: Owner ID to filter over commands
+* TOKEN: Discord token
+* NOTIFY: With False, nothing will be sent, the bot will be used with commands only
+## Commands
+* PREFIX_CMD: The prefix to add for all commands
+* FORCE_SCHEDULE_CMD: The force option, will be <PREFIX_CMD><FORCE_SCHEDULE_CMD>. Used to force schedule an event
+* ENABLE_SCHEDULER_CMD: The command to enable notifications, will be <PREFIX_CMD><ENABLE_SCHEDULER_CMD>
+* DISABLE_SCHEDULER_CMD: The command to disable notifications, will be <PREFIX_CMD><DISABLE_SCHEDULER_CMD>
 
 # Known bugs
 /

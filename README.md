@@ -23,20 +23,34 @@ Below you'll find everything you need to use the bot.
 
 # Environment variables
 ## Basics
-* ROLE_ID: Role ID to mention in the poll
-* CHANNEL_ID: Channel ID to send the poll in
-* BOT_OWNER_ID: Owner ID to filter over commands
-* TOKEN: Discord token
-* NOTIFY: With False, nothing will be sent, the bot will be used with commands only
+* ROLE_ID
+    - Role ID to mention with the poll
+    - Format: encapsulated string: '<@&154785693>'
+* CHANNEL_ID
+    - Channel ID to send the poll in
+    - Format: basic string: '154785693'
+* BOT_OWNER_ID
+    - Owner ID to filter over commands
+    - Format: basic string: '154785693'
+* TOKEN
+    - Discord token ([see docs](https://discord.com/developers))
+    - Format: basic string: '154785693'
+* NOTIFY
+    - With False, nothing will be sent, the bot will be used with commands only
+    - Format: boolean: 'True' or 'False'
 ## Commands
 * PREFIX_CMD
     - The prefix to add for all commands
+    - Format: basic string: '_es'
 * FORCE_SCHEDULE_CMD
     - Used to force schedule an event, will be <PREFIX_CMD><FORCE_SCHEDULE_CMD>
+    - Format: basic string: '_force'
 * ENABLE_SCHEDULER_CMD
     - The command to enable notifications, will be <PREFIX_CMD><ENABLE_SCHEDULER_CMD>
+    - Format: basic string: '_enable'
 * DISABLE_SCHEDULER_CMD
     - The command to disable notifications, will be <PREFIX_CMD><DISABLE_SCHEDULER_CMD>
+    - Format: basic string: '_disable'
 
 # Known bugs
 /

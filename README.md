@@ -30,7 +30,7 @@ Below you'll find everything you need to use the bot.
 * NOTIFY: With False, nothing will be sent, the bot will be used with commands only
 ## Commands
 * PREFIX_CMD
-** The prefix to add for all commands
+    - The prefix to add for all commands
 * FORCE_SCHEDULE_CMD: Used to force schedule an event, will be <PREFIX_CMD><FORCE_SCHEDULE_CMD>
 * ENABLE_SCHEDULER_CMD: The command to enable notifications, will be <PREFIX_CMD><ENABLE_SCHEDULER_CMD>
 * DISABLE_SCHEDULER_CMD: The command to disable notifications, will be <PREFIX_CMD><DISABLE_SCHEDULER_CMD>

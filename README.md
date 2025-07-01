@@ -25,23 +25,23 @@ Below you'll find everything you need to use the bot.
 ## Basics
 * ROLE_ID
     - Defines the role ID to mention with the poll
-    - Format: encapsulated string: '<@&154785693>'
+    - Format: encapsulated string: ```<@&154785693>```
 * CHANNEL_ID
     - Defines the channel ID to send the poll in
-    - Format: basic string: '154785693'
+    - Format: basic string: ```154785693```
 * BOT_OWNER_ID
     - Defines the owner ID to filter over commands
-    - Format: basic string: '154785693'
+    - Format: basic string: ```154785693```
 * TOKEN
     - Defines the Discord token ([see docs](https://discord.com/developers))
-    - Format: basic string: '154785693'
+    - Format: basic string: ```154785693```
 * NOTIFY
     - Defines the notification settings; with False, the bot will be used with commands only
-    - Format: boolean: 'True' or 'False'
+    - Format: boolean: ```True``` or ```False```
 ## Commands
 * PREFIX_CMD
     - Defines the prefix to add for all commands
-    - Format: basic string:```'_es'```
+    - Format: basic string: ```_es```
 * FORCE_SCHEDULE_CMD
     - Defines comand to force the poll, it will be ```<PREFIX_CMD><FORCE_SCHEDULE_CMD>```
     - Format: basic string: '_force'

@@ -49,17 +49,17 @@ Below you'll find everything you need to use the bot.
     - Defines the command to enable notifications, it will be <PREFIX_CMD><ENABLE_SCHEDULER_CMD>
     - Format: basic string: '_enable'
 * DISABLE_SCHEDULER_CMD
-    - The command to disable notifications, will be <PREFIX_CMD><DISABLE_SCHEDULER_CMD>
+    - Defines the command to disable notifications, it will be <PREFIX_CMD><DISABLE_SCHEDULER_CMD>
     - Format: basic string: '_disable'
-## Emojis ([see docs](https://www.prosettings.com/emoji-list/))
+## Emojis ([see full list](https://www.prosettings.com/emoji-list/))
 * YES_EMOTE
-    - The emoji for the yes option
+    - Defines the emoji for the yes option
     - Format: encoded string: '\U00002705'
 * NO_EMOTE
-    - The emoji for the no option
+    - Defines the emoji for the no option
     - Format: encoded string: '\U0000274C'
 * WARN_EMOTE
-    - The emoji for the warning answer (bot's answer if unknown command sent)
+    - Defines the emoji for the warning answer (bot's answer if unknown command sent)
     - Format: encoded string: '\U000026A0'
 ## Poll settings
 * SCHEDULES

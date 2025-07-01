@@ -24,29 +24,29 @@ Below you'll find everything you need to use the bot.
 # Environment variables
 ## Basics
 * ROLE_ID
-    - Role ID to mention with the poll
+    - Defines the role ID to mention with the poll
     - Format: encapsulated string: '<@&154785693>'
 * CHANNEL_ID
-    - Channel ID to send the poll in
+    - Defines the channel ID to send the poll in
     - Format: basic string: '154785693'
 * BOT_OWNER_ID
-    - Owner ID to filter over commands
+    - Defines the owner ID to filter over commands
     - Format: basic string: '154785693'
 * TOKEN
-    - Discord token ([see docs](https://discord.com/developers))
+    - Defines the Discord token ([see docs](https://discord.com/developers))
     - Format: basic string: '154785693'
 * NOTIFY
-    - With False, nothing will be sent, the bot will be used with commands only
+    - Defines the notification settings; with False, the bot will be used with commands only
     - Format: boolean: 'True' or 'False'
 ## Commands
 * PREFIX_CMD
-    - The prefix to add for all commands
+    - Defines the prefix to add for all commands
     - Format: basic string: '_es'
 * FORCE_SCHEDULE_CMD
-    - Used to force schedule an event, will be <PREFIX_CMD><FORCE_SCHEDULE_CMD>
+    - Defines comand to force the poll, it will be <PREFIX_CMD><FORCE_SCHEDULE_CMD>
     - Format: basic string: '_force'
 * ENABLE_SCHEDULER_CMD
-    - The command to enable notifications, will be <PREFIX_CMD><ENABLE_SCHEDULER_CMD>
+    - Defines the command to enable notifications, it will be <PREFIX_CMD><ENABLE_SCHEDULER_CMD>
     - Format: basic string: '_enable'
 * DISABLE_SCHEDULER_CMD
     - The command to disable notifications, will be <PREFIX_CMD><DISABLE_SCHEDULER_CMD>
@@ -61,7 +61,19 @@ Below you'll find everything you need to use the bot.
 * WARN_EMOTE
     - The emoji for the warning answer (bot's answer if unknown command sent)
     - Format: encoded string: '\U000026A0'
-# Poll settings
+## Poll settings
+* SCHEDULES
+    - Defines schedules when the poll is sent
+    - Format: <WEEKDAY>-<HOUR>
+    - Format: Weekday: 0 (Monday) to 6 (Sunday)
+    - Format: Hour: HHMM in 24-hours format
+    - Format: basic string: '5-1830'
+    - Format: comma-separated if multiple schedules '5-1830,6-1000'
+* POLL_DURATION_HOURS
+    - Defines the duration of the poll in hours
+    - Format: int: '90'
+* POLL_ANSWERS: "01-15h00_15h30,03-18h00"
+    - Defines available answers for the poll 
 
 # Known bugs
 /

@@ -54,24 +54,24 @@ Below you'll find everything you need to use the bot.
 ## Emojis ([see full list](https://www.prosettings.com/emoji-list/))
 * YES_EMOTE
     - Defines the emoji for the yes option
-    - Format: encoded string: '\U00002705'
+    - Format: encoded string: ```\U00002705```
 * NO_EMOTE
     - Defines the emoji for the no option
-    - Format: encoded string: '\U0000274C'
+    - Format: encoded string: ```\U0000274C```
 * WARN_EMOTE
     - Defines the emoji for the warning answer (bot's answer if unknown command sent)
-    - Format: encoded string: '\U000026A0'
+    - Format: encoded string: ```\U000026A0```
 ## Poll settings
 * SCHEDULES
     - Defines schedules when the poll is sent
-    - Format: <WEEKDAY>-<HOUR>
-    - Format: Weekday: 0 (Monday) to 6 (Sunday)
-    - Format: Hour: HHMM in 24-hours format
-    - Format: basic string: '5-1830'
-    - Format: comma-separated if multiple schedules '5-1830,6-1000'
+    - Format: ```<WEEKDAY>-<HOUR>```
+    - Format: weekday: ```0``` (Monday) to ```6``` (Sunday)
+    - Format: hour: HHMM in 24-hours format
+    - Format: basic string: ```5-1830```
+    - Format: comma-separated if multiple schedules ```5-1830,6-1000```
 * POLL_DURATION_HOURS
     - Defines the duration of the poll in hours
-    - Format: int: '90'
+    - Format: integer: ```90```
 * POLL_ANSWERS: "01-15h00_15h30,03-18h00"
     - Defines available answers for the poll 
 

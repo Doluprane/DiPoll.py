@@ -28,29 +28,29 @@ Below you'll find everything you need to use the bot.
     - Format: encapsulated string: ```<@&154785693>```
 * CHANNEL_ID
     - Defines the channel ID to send the poll in
-    - Format: basic string: ```154785693```
+    - Format: string: ```154785693```
 * BOT_OWNER_ID
     - Defines the owner ID to filter over commands
-    - Format: basic string: ```154785693```
+    - Format: string: ```154785693```
 * TOKEN
     - Defines the Discord token ([see docs](https://discord.com/developers))
-    - Format: basic string: ```154785693```
+    - Format: string: ```154785693```
 * NOTIFY
     - Defines the notification settings; with False, the bot will be used with commands only
     - Format: boolean: ```True``` or ```False```
 ## Commands
 * PREFIX_CMD
     - Defines the prefix to add for all commands
-    - Format: basic string: ```_es```
+    - Format: string: ```_es```
 * FORCE_SCHEDULE_CMD
     - Defines comand to force the poll, it will be ```<PREFIX_CMD><FORCE_SCHEDULE_CMD>```
-    - Format: basic string: ```_force```
+    - Format: string: ```_force```
 * ENABLE_SCHEDULER_CMD
     - Defines the command to enable notifications, it will be ```<PREFIX_CMD><ENABLE_SCHEDULER_CMD>```
-    - Format: basic string: ```_enable```
+    - Format: string: ```_enable```
 * DISABLE_SCHEDULER_CMD
     - Defines the command to disable notifications, it will be ```<PREFIX_CMD><DISABLE_SCHEDULER_CMD>```
-    - Format: basic string: ```_disable```
+    - Format: string: ```_disable```
 ## Emojis ([see full list](https://www.prosettings.com/emoji-list/))
 * YES_EMOTE
     - Defines the emoji for the yes option
@@ -67,7 +67,7 @@ Below you'll find everything you need to use the bot.
     - Format: ```<WEEKDAY>-<HOUR>```
     - Format: weekday: ```0``` (Monday) to ```6``` (Sunday)
     - Format: hour: HHMM in 24-hours format
-    - Format: basic string: ```5-1830```
+    - Format: string: ```5-1830```
     - Format: comma-separated if multiple schedules ```5-1830,6-1000```
 * POLL_DURATION_HOURS
     - Defines the duration of the poll in hours
@@ -79,7 +79,7 @@ Below you'll find everything you need to use the bot.
     - Format: hour: if you use ```15h00_15h30``` it will render as ```between 15h00 and 15h30```
     - Format: hour: if you use ```18h00``` it will render as ```at 18h00```
     - Format: hour: you can use any hour format here, ```8PM_8:30PM``` will be rendered as ```between 8PM and 8:30PM```
-    - Format: basic string: ```01-15h00_15h30```
+    - Format: string: ```01-15h00_15h30```
     - Format: comma-separated if multiple answers ```01-15h00_15h30,03-18h00```
 ## Localization
 * ACTIVITY_TEXT: "Event Scheduler"

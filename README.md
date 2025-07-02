@@ -4,9 +4,9 @@ This small Discord bot written in Python3 allows you to schedule events weekly o
 Below you'll find everything you need to use the bot.
 
 # Results
-### <p align="center">Poll rendered in Discord</p>
+### Poll rendered in Discord
 ![Rendered](_samples/ui_rendered.png)<br>
-### <p align="center">Logs rendered in [Dokémon](https://github.com/productiveops/dokemon)</p>
+### Logs rendered in [Dokémon](https://github.com/productiveops/dokemon)
 ![Rendered](_samples/logs_rendered.png)<br>
 
 # Requirements

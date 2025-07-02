@@ -74,8 +74,8 @@ Below you'll find everything you need to use the bot.
     - Format: integer: ```90```
 * POLL_ANSWERS: 
     - Defines available answers for the poll 
-    - Format: ````<WEEKDAY>-<HOUR>```
-    - Format: weekday: ````00``` (Monday) to ```06``` (Sunday); you can remove the first ```0``` if needed
+    - Format: ```<WEEKDAY>-<HOUR>```
+    - Format: weekday: ```00``` (Monday) to ```06``` (Sunday); you can remove the first ```0``` if needed
     - Format: hour: if you use ```15h00_15h30``` it will render as ```between 15h00 and 15h30```
     - Format: hour: if you use ```18h00``` it will render as ```at 18h00```
     - Format: basic string: ```01-15h00_15h30```

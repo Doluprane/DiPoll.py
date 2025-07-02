@@ -1,10 +1,10 @@
-version: "3.9"
-
 services:
   dipoll:
     image: dipoll:latest
     container_name: default-scheduler
     restart: unless-stopped
+    build:
+      context: .
     environment:
       # Basics for the bot to work
       ROLE_ID: ${ROLE_ID}
@@ -24,7 +24,7 @@ services:
       # Schedule, answers and duration for the poll
       SCHEDULES: "0-1200"
       POLL_DURATION_HOURS: 24
-      POLL_ANSWERS: "01-15h00_15h30,03-18h00"
+      POLL_ANSWERS: "1-15h00_15h30,3-18h00"
       # Localization
       ACTIVITY_TEXT: "Event Scheduler"
       POLL_TITLE_TEXT: "Next Game Session"

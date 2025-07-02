@@ -1,10 +1,10 @@
-version: "3.9"
-
 services:
   dipoll:
     image: dipoll:latest
     container_name: pro-scheduler-mtg-fr
     restart: unless-stopped
+    build:
+      context: .
     environment:
       # Basics for the bot to work
       ROLE_ID: ${ROLE_ID}
@@ -24,7 +24,7 @@ services:
       # Schedule, answers and duration for the poll
       SCHEDULES: "1-2000"
       POLL_DURATION_HOURS: 89
-      POLL_ANSWERS: "05-13h30_14h00,06-13h30_14h00"
+      POLL_ANSWERS: "5-13h30_14h00,6-13h30_14h00"
       # Localization
       ACTIVITY_TEXT: "Magic: The Sect"
       POLL_TITLE_TEXT: "MTG - Prochaine session de jeu"

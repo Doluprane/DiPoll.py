@@ -72,8 +72,14 @@ Below you'll find everything you need to use the bot.
 * POLL_DURATION_HOURS
     - Defines the duration of the poll in hours
     - Format: integer: ```90```
-* POLL_ANSWERS: "01-15h00_15h30,03-18h00"
+* POLL_ANSWERS: 
     - Defines available answers for the poll 
+    - Format: ````<WEEKDAY>-<HOUR>```
+    - Format: weekday: ````00``` (Monday) to ```06``` (Sunday); you can remove the first ```0``` if needed
+    - Format: hour: if you use ```15h00_15h30``` it will render as ```between 15h00 and 15h30```
+    - Format: hour: if you use ```18h00``` it will render as ```at 18h00```
+    - Format: basic string: ```01-15h00_15h30```
+    - Format: comma-separated if multiple answers ```01-15h00_15h30,03-18h00```
 
 # Known bugs
 /

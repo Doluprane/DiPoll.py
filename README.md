@@ -54,13 +54,13 @@ Below you'll find everything you need to use the bot.
 ## Emojis ([see full list](https://www.prosettings.com/emoji-list/))
 * YES_EMOTE
     - Defines the emoji for the yes option
-    - Format: encoded string: ```\U00002705```
+    - Format: string: ```\U00002705```
 * NO_EMOTE
     - Defines the emoji for the no option
-    - Format: encoded string: ```\U0000274C```
+    - Format: string: ```\U0000274C```
 * WARN_EMOTE
     - Defines the emoji for the warning answer (bot's answer if unknown command sent)
-    - Format: encoded string: ```\U000026A0```
+    - Format: string: ```\U000026A0```
 ## Poll settings
 * SCHEDULES
     - Defines schedules when the poll is sent
@@ -75,12 +75,52 @@ Below you'll find everything you need to use the bot.
 * POLL_ANSWERS: 
     - Defines available answers for the poll 
     - Format: ```<WEEKDAY>-<HOUR>```
-    - Format: weekday: ```00``` (Monday) to ```06``` (Sunday); you can remove the first ```0``` if needed
+    - Format: weekday: ```0``` (Monday) to ```6``` (Sunday)
     - Format: hour: if you use ```15h00_15h30``` it will render as ```between 15h00 and 15h30```
     - Format: hour: if you use ```18h00``` it will render as ```at 18h00```
     - Format: hour: you can use any hour format here, ```8PM_8:30PM``` will be rendered as ```between 8PM and 8:30PM```
     - Format: basic string: ```01-15h00_15h30```
     - Format: comma-separated if multiple answers ```01-15h00_15h30,03-18h00```
+## Localization
+* ACTIVITY_TEXT: "Event Scheduler"
+    - Defines the bot's activity in Discord
+    - Format: string
+* POLL_TITLE_TEXT: "Next Game Session"
+    - Defines the poll title
+    - Format: string
+* POLL_AWAY_TEXT: "Away"
+    - Defines the last poll option
+    - Format: string
+* POLL_BETWEEN_TEXT: "between"
+    - Defines the replacement for ```between``` in ```POLL_ANSWERS```
+    - Format: string
+* POLL_AND_TEXT: "and"
+    - Defines the replacement for ```and``` in ```POLL_ANSWERS```
+    - Format: string
+* POLL_AT_TEXT: "at"
+    - Defines the replacement for ```at``` in ```POLL_ANSWERS```
+    - Format: string
+* MONDAY_TEXT: "Monday"
+    - Defines the replacement for ```Monday```
+    - Format: string
+* TUESDAY_TEXT: "Tuesday"
+    - Defines the replacement for ```Tuesday```
+    - Format: string
+* WEDNESDAY_TEXT: "Wednesday"
+    - Defines the replacement for ```Wednesday```
+    - Format: string
+* THURSDAY_TEXT: "Thursday"
+    - Defines the replacement for ```Thursday```
+    - Format: string
+* FRIDAY_TEXT: "Friday"
+    - Defines the replacement for ```Friday```
+    - Format: string
+* SATURDAY_TEXT: "Saturday"
+    - Defines the replacement for ```Saturday```
+    - Format: string
+* SUNDAY_TEXT: "Sunday"
+    - Defines the replacement for ```Sunday```
+    - Format: string
 
 # Known bugs
 /

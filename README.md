@@ -78,6 +78,7 @@ Below you'll find everything you need to use the bot.
     - Format: weekday: ```00``` (Monday) to ```06``` (Sunday); you can remove the first ```0``` if needed
     - Format: hour: if you use ```15h00_15h30``` it will render as ```between 15h00 and 15h30```
     - Format: hour: if you use ```18h00``` it will render as ```at 18h00```
+    - Format: hour: you can use any hour format here, ```8PM_8:30PM``` will be rendered as ```between 8PM and 8:30PM```
     - Format: basic string: ```01-15h00_15h30```
     - Format: comma-separated if multiple answers ```01-15h00_15h30,03-18h00```
 

@@ -44,13 +44,13 @@ Below you'll find everything you need to use the bot.
     - Format: basic string: ```_es```
 * FORCE_SCHEDULE_CMD
     - Defines comand to force the poll, it will be ```<PREFIX_CMD><FORCE_SCHEDULE_CMD>```
-    - Format: basic string: '_force'
+    - Format: basic string: ```_force```
 * ENABLE_SCHEDULER_CMD
-    - Defines the command to enable notifications, it will be <PREFIX_CMD><ENABLE_SCHEDULER_CMD>
-    - Format: basic string: '_enable'
+    - Defines the command to enable notifications, it will be ```<PREFIX_CMD><ENABLE_SCHEDULER_CMD>```
+    - Format: basic string: ```_enable```
 * DISABLE_SCHEDULER_CMD
-    - Defines the command to disable notifications, it will be <PREFIX_CMD><DISABLE_SCHEDULER_CMD>
-    - Format: basic string: '_disable'
+    - Defines the command to disable notifications, it will be ```<PREFIX_CMD><DISABLE_SCHEDULER_CMD>```
+    - Format: basic string: ```_disable```
 ## Emojis ([see full list](https://www.prosettings.com/emoji-list/))
 * YES_EMOTE
     - Defines the emoji for the yes option

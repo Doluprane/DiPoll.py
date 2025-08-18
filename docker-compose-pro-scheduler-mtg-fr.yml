@@ -3,8 +3,6 @@ services:
     image: dipoll:latest
     container_name: pro-scheduler-mtg-fr
     restart: unless-stopped
-    build:
-      context: .
     environment:
       # Basics for the bot to work
       ROLE_ID: ${ROLE_ID}
@@ -21,10 +19,12 @@ services:
       YES_EMOTE: "\U00002705"
       NO_EMOTE: "\U0000274C"
       WARN_EMOTE: "\U000026A0"
+      HOSTING_EMOTE: "\U0001F3E0"
       # Schedule, answers and duration for the poll
       SCHEDULES: "1-2000"
       POLL_DURATION_HOURS: 89
       POLL_ANSWERS: "5-13h30_14h00,6-13h30_14h00"
+      HOSTING: ${HOSTING}
       # Localization
       ACTIVITY_TEXT: "Magic: The Sect"
       POLL_TITLE_TEXT: "MTG - Prochaine session de jeu"
@@ -39,3 +39,7 @@ services:
       FRIDAY_TEXT: "Vendredi"
       SATURDAY_TEXT: "Samedi"
       SUNDAY_TEXT: "Dimanche"
+      HOSTING_TEXT: "Je me propose pour héberger !"
+      MORNING_TEXT: "en matinée"
+      AFTERNOON_TEXT: "dans l'après-midi"
+      EVENING_TEXT: "en soirée"

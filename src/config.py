@@ -38,6 +38,8 @@ class Globals:
     NO_EMOTE = os.getenv("NO_EMOTE", '\U0000274C')
     # default: \U000026A0
     WARN_EMOTE = os.getenv("WARN_EMOTE", '\U000026A0')
+    # default: \U0001F3E0
+    HOSTING_EMOTE = os.getenv("HOSTING_EMOTE", '\U0001F3E0')
     # This example schedules the mesage for Tuesday at 8PM (24 hours format). Days are mapped from 0 (Monday) to 6 (Sunday). Multiple values are comma separated.
     # default: 0-1200 (Monday at 12h00 or 12PM)
     SCHEDULES = os.getenv("SCHEDULES", "0-1200")
@@ -96,9 +98,22 @@ class Globals:
     # Translation for 'Sunday'
     # default: Sunday
     SUNDAY_TEXT = os.getenv("SUNDAY_TEXT", "Sunday")
+    # Translation for 'I can host the session'
+    # default: I can host the session
+    HOSTING_TEXT = os.getenv("HOSTING_TEXT", "I can host the session")
+    # Translation for 'in the morning'
+    # default: in the morning
+    MORNING_TEXT = os.getenv("MORNING_TEXT", "in the morning")
+    # Translation for 'in the afternoon'
+    # default: in the afternoon
+    AFTERNOON_TEXT = os.getenv("AFTERNOON_TEXT", "in the afternoon")
+    # Translation for 'in the evening'
+    # default: in the evening
+    EVENING_TEXT = os.getenv("EVENING_TEXT", "in the evening")
 
     ### Non-consts
     notify = os.getenv("NOTIFY", "true").lower() in ("1", "true", "yes")
+    hosting = os.getenv("HOSTING", "false").lower() in ("1", "true", "yes")
     client = discord.Client(intents=discord.Intents.all())
     scheduler = AsyncIOScheduler()
 

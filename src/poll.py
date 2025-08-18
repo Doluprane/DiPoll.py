@@ -14,8 +14,19 @@ from config import Globals
 # Allows to use 'between' or 'at' depending of the sentence 
 def parse_answer(answer):
     day_str, hour_str = answer.split("-")
+    # Between case
     if("_" in hour_str):
         hour_str = Globals.POLL_BETWEEN_TEXT + " " + hour_str.replace("_", " " + Globals.POLL_AND_TEXT + " ")
+    # Morning case
+    elif hour_str == "M":
+        hour_str = Globals.MORNING_TEXT
+    # Afternoon case
+    elif hour_str == "A":
+        hour_str = Globals.AFTERNOON_TEXT
+    # Evening case
+    elif hour_str == "E":
+        hour_str = Globals.EVENING_TEXT
+    # Default case with precise schedule
     else:
         hour_str = Globals.POLL_AT_TEXT + " " + hour_str
     return day_str, hour_str
@@ -78,22 +89,28 @@ async def get_channel(channel_id):
 # Schedule the wanted event using discord.Poll, it loops over Globals.POLL_ANSWER to add answer and then add the away answer
 async def schedule_event():
     logconf.logger.info("* Trying to schedule an event...")
-    channel = await get_channel(Globals.CHANNEL_ID)    
-    poll = discord.Poll(question=Globals.POLL_TITLE_TEXT, duration=timedelta(hours=Globals.POLL_DURATION_HOURS))
+    if Globals.notify:
+        channel = await get_channel(Globals.CHANNEL_ID)    
+        poll = discord.Poll(question=Globals.POLL_TITLE_TEXT, duration=timedelta(hours=Globals.POLL_DURATION_HOURS))
 
-    try:
-        for _, answer in enumerate(Globals.POLL_ANSWERS.split(",")):
-            day_str, hour_str = parse_answer(answer)
-            text = get_next_weekday_date(int(day_str)) + " " + hour_str
-            poll.add_answer(text=text, emoji=Globals.YES_EMOTE)
+        try:
+            for _, answer in enumerate(Globals.POLL_ANSWERS.split(",")):
+                day_str, hour_str = parse_answer(answer)
+                text = get_next_weekday_date(int(day_str)) + " " + hour_str
+                poll.add_answer(text=text, emoji=Globals.YES_EMOTE)
         
-        poll.add_answer(text=Globals.POLL_AWAY_TEXT, emoji=Globals.NO_EMOTE)
-        poll.multiple = True
+            if Globals.hosting:
+                poll.add_answer(text=Globals.HOSTING_TEXT, emoji=Globals.HOSTING_EMOTE)
 
-        msg = await channel.send(Globals.ROLE_ID, poll=poll)
-        if msg:
-            logconf.logger.info("* Event successfully scheduled !")
-    except Exception as e:
-        logconf.logger.error("* Unable to schedule event !")
-        logconf.logger.error("* Trace: %s", e)
-        raise
+            poll.add_answer(text=Globals.POLL_AWAY_TEXT, emoji=Globals.NO_EMOTE)
+            poll.multiple = True
+
+            msg = await channel.send(Globals.ROLE_ID, poll=poll)
+            if msg:
+                logconf.logger.info("* Event successfully scheduled !")
+        except Exception as e:
+            logconf.logger.error("* Unable to schedule event !")
+            logconf.logger.error("* Trace: %s", e)
+            raise
+    else:
+        logconf.logger.info("* Notifications are disabled. Aborting current operation...")

@@ -17,22 +17,23 @@ async def on_message(message):
     try:
         if (message.author.id == int(Globals.BOT_OWNER_ID)):
             if (message.content.startswith(Globals.PREFIX_CMD)):
-                match message.content:
-                    case Commands.FORCE:
-                        logconf.logger.info("* Force schedule asked by %s@%s@%s.", message.author.name, message.author.id, message.id)
-                        await poll.schedule_event()
-                        await message.delete()
-                    case Commands.DISABLE:
-                        Globals.notify = False
-                        logconf.logger.info("* Disable notify asked by %s@%s@%s.", message.author.name, message.author.id, message.id)
-                        await message.delete()
-                    case Commands.ENABLE:
-                        Globals.notify = True
-                        logconf.logger.info("* Enable notify asked by %s@%s@%s.", message.author.name, message.author.id, message.id)
-                        await message.delete()
-                    case _:
-                        logconf.logger.warning("* Unknown command from %s@%s@%s : %s.", message.author.name, message.author.id, message.id, message.content)
-                        await message.add_reaction(Globals.WARN_EMOTE)
+                if (message.channel.id == int(Globals.CHANNEL_ID)):
+                    match message.content:
+                        case Commands.FORCE:
+                            logconf.logger.info("* Force schedule asked by %s@%s@%s.", message.author.name, message.author.id, message.id)
+                            await poll.schedule_event()
+                            await message.delete()
+                        case Commands.DISABLE:
+                            Globals.notify = False
+                            logconf.logger.info("* Disable notify asked by %s@%s@%s.", message.author.name, message.author.id, message.id)
+                            await message.delete()
+                        case Commands.ENABLE:
+                            Globals.notify = True
+                            logconf.logger.info("* Enable notify asked by %s@%s@%s.", message.author.name, message.author.id, message.id)
+                            await message.delete()
+                        case _:
+                            logconf.logger.warning("* Unknown command from %s@%s@%s : %s.", message.author.name, message.author.id, message.id, message.content)
+                            await message.add_reaction(Globals.WARN_EMOTE)
     except Exception as e:
         logconf.logger.error("* Unable to read the message !")
         logconf.logger.error("* Trace: %s", e)

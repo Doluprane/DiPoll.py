@@ -1,0 +1,45 @@
+services:
+  dipoll:
+    image: dipoll:latest
+    container_name: pst-scheduler-mtg-fr
+    restart: unless-stopped
+    environment:
+      # Basics for the bot to work
+      ROLE_ID: ${ROLE_ID}
+      CHANNEL_ID: ${CHANNEL_ID}
+      BOT_OWNER_ID: ${BOT_OWNER_ID}
+      TOKEN: ${TOKEN}
+      NOTIFY: ${NOTIFY}
+      # Commands customization
+      PREFIX_CMD: "_mtg"
+      FORCE_SCHEDULE_CMD: "_force"
+      ENABLE_SCHEDULER_CMD: "_enable"
+      DISABLE_SCHEDULER_CMD: "_disable"
+      # Emote declaration
+      YES_EMOTE: "\U00002705"
+      NO_EMOTE: "\U0000274C"
+      WARN_EMOTE: "\U000026A0"
+      HOSTING_EMOTE: "\U0001F3E0"
+      # Schedule, answers and duration for the poll
+      SCHEDULES: "6-2000"
+      POLL_DURATION_HOURS: 167
+      POLL_ANSWERS: "4-E,5-A,5-E,6-A,6-E"
+      HOSTING: ${HOSTING}
+      # Localization
+      ACTIVITY_TEXT: "à définir"
+      POLL_TITLE_TEXT: "Planeswalkers Turons - Quand c'est qu'on joue ?"
+      POLL_AWAY_TEXT: "Non, j'ai aquaponey !"
+      POLL_BETWEEN_TEXT: "entre"
+      POLL_AND_TEXT: "et"
+      POLL_AT_TEXT: "à"
+      MONDAY_TEXT: "Lundi"
+      TUESDAY_TEXT: "Mardi"
+      WEDNESDAY_TEXT: "Mercredi"
+      THURSDAY_TEXT: "Jeudi"
+      FRIDAY_TEXT: "Vendredi"
+      SATURDAY_TEXT: "Samedi"
+      SUNDAY_TEXT: "Dimanche"
+      HOSTING_TEXT: "Je me propose pour héberger !"
+      MORNING_TEXT: "en matinée"
+      AFTERNOON_TEXT: "dans l'après-midi"
+      EVENING_TEXT: "en soirée"

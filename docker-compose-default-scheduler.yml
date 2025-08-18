@@ -3,8 +3,6 @@ services:
     image: dipoll:latest
     container_name: default-scheduler
     restart: unless-stopped
-    build:
-      context: .
     environment:
       # Basics for the bot to work
       ROLE_ID: ${ROLE_ID}
@@ -21,10 +19,12 @@ services:
       YES_EMOTE: "\U00002705"
       NO_EMOTE: "\U0000274C"
       WARN_EMOTE: "\U000026A0"
+      HOSTING_EMOTE: "\U0001F3E0"
       # Schedule, answers and duration for the poll
       SCHEDULES: "0-1200"
       POLL_DURATION_HOURS: 24
       POLL_ANSWERS: "1-15h00_15h30,3-18h00"
+      HOSTING: ${HOSTING}
       # Localization
       ACTIVITY_TEXT: "Event Scheduler"
       POLL_TITLE_TEXT: "Next Game Session"
@@ -39,3 +39,7 @@ services:
       FRIDAY_TEXT: "Friday"
       SATURDAY_TEXT: "Saturday"
       SUNDAY_TEXT: "Sunday"
+      HOSTING_TEXT: "I can host the session"
+      MORNING_TEXT: "in the morning"
+      AFTERNOON_TEXT: "in the afternoon"
+      EVENING_TEXT: "in the evening"

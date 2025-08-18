@@ -17,8 +17,9 @@ Below you'll find everything you need to use the bot.
 * OPTIONAL: A GUI tool like Dokémon, Rancher, etc...
 
 # Deployment
-* Update variables in the ```docker-compose-default-scheduler.yml```
-* Build & run the image ```docker compose -f docker-compose-default-scheduler.yml up```
+* Update variables in the ```docker-compose-default-scheduler.yml``` (or take this file as a base)
+* Build the image ```docker build -t dipoll:latest . --no-cache```
+* Run the image ```docker compose -f docker-compose-default-scheduler.yml up```
 * Check the logs
 
 # Environment variables
@@ -61,6 +62,9 @@ Below you'll find everything you need to use the bot.
 * WARN_EMOTE
     - Defines the emoji for the warning answer (bot's answer if unknown command sent)
     - Format: string: ```\U000026A0```
+* HOSTING_EMOTE
+    - Defines the emoji for the hosting answer (to be used if someone can/wants to host the event)
+    - Format: string: ```\U0001F3E0```
 ## Poll settings
 * SCHEDULES
     - Defines schedules when the poll is sent
@@ -81,6 +85,9 @@ Below you'll find everything you need to use the bot.
     - Format: hour: you can use any hour format here, ```8PM_8:30PM``` will be rendered as ```between 8PM and 8:30PM```
     - Format: string: ```01-15h00_15h30```
     - Format: comma-separated if multiple answers ```01-15h00_15h30,03-18h00```
+* HOSTING:
+    - Defines if the Hosting option is enabled or not
+    - Format: ```True``` or ```False```
 ## Localization
 * ACTIVITY_TEXT: "Event Scheduler"
     - Defines the bot's activity in Discord
@@ -120,6 +127,18 @@ Below you'll find everything you need to use the bot.
     - Format: string
 * SUNDAY_TEXT: "Sunday"
     - Defines the replacement for ```Sunday```
+    - Format: string
+* HOSTING_TEXT: "I can host the session"
+    - Defines the replacement for ```I can host the session```
+    - Format: string
+* MORNING_TEXT: "in the morning"
+    - Defines the replacement for ```in the morning```
+    - Format: string
+* AFTERNOON_TEXT: "in the afternoon"
+    - Defines the replacement for ```in the afternoon```
+    - Format: string
+* EVENING_TEXT: "in the evening"
+    - Defines the replacement for ```in the evening```
     - Format: string
 
 # Known bugs
